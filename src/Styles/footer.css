@@ -1,0 +1,106 @@
+/* ninth */
+
+.ninthPart{
+    height:720px;
+    background:#00002a;  
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding:20px 0px 0px 0px;
+    overflow:hidden;
+    justify-content: center;
+    align-items: center;
+}
+.firstNinth{
+    height:30%;
+    width:70%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.secondNinth{
+    height:40%;
+    width:50%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+.ninthSecondTxt{
+    height:100%;
+    width:33%;
+    color:#fff;
+    font-weight:bold;
+}
+.ninthSecondTxt li{
+    margin-top:8px;
+    list-style-type: none;
+    transition: 0.5s;
+}
+.ninthSecondTxt li:hover{
+    margin-left:5px;
+    cursor: pointer;
+    color:#ada9a9;
+}
+.thirdNinth{
+    height:40%;
+    width:70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ninthButton{
+    background-color: #1f18c0;
+    font-weight:bold;
+    color:#fff;
+    font-size:18px;
+    border:none;
+    height:4rem;
+    margin-top:20px;
+    width:350px;
+    border-radius: 100px;
+    cursor: pointer;
+    box-shadow:2px 2px 5px #000;
+    transition: 0.7s;
+}
+.ninthButton:hover{
+    background-color:#fff ;
+    color:#1f18c0;
+    border:1px solid #1f18c0;
+}
+.iconsNinth{
+    width:50%;
+    height:80px;
+    margin-top:40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.ninthSingleIcon{
+    height:70%;
+    width:11%;
+    border-radius:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#f6f4f1;
+    cursor:pointer;
+    transition: 0.5s;
+}
+.ninthSingleIcon:hover{
+    transform: translate(2px);
+    background:#b9b8b5;
+}
+
+.iconsNinth a{
+    text-decoration: none;
+    color:#000;
+}
+.iconsNinth a:hover{
+    text-decoration: none;
+    color:#000;
+}

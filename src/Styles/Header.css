@@ -1,0 +1,266 @@
+.MainHeader{
+    height:80px;
+    background-image:linear-gradient(#f6f4f1, #cecdf6) ;
+    width:100%;
+    box-sizing: border-box;
+    display: block;
+    background-color:transparent;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px #000;
+    border-radius:10px 10px 0px 0px;
+}
+.headerLogo{
+    width:80px;
+    margin-top:5px;
+    margin-left:30px;
+    height:90px;
+    float:left;
+}
+.headerName{
+    display: flex;
+    justify-content: center;
+    width:auto;
+    font-weight: 100;
+    margin:30px 0px -20px 90px;
+    padding:10px 20px;
+    font-size: 22px;
+    height:90px;
+    float:left;
+    color:#000;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #000;
+}
+.MainHeader ul{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+width: 760px;
+border-radius: 10px;
+float:right;
+font-size: 22px;
+margin-top: 5px;
+margin-right:10px;
+/* box-shadow:inset 2px 2px 10px #000; */
+}
+.CartNumber{
+    position:absolute;
+    margin-top:-45px;
+    margin-left:40px;
+    background:#916ded;
+    color:#fff;
+    height:25px;
+    width:25px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    font-size: 19px;
+}
+
+.MainHeader li{
+ float:left;
+ list-style-type: none;
+ margin-left: 20px;
+ cursor:pointer;
+ font-weight: 400;
+ color:#1d1d1d;
+ transition:1s linear ;
+}
+.MainHeader li:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3.5px #000000;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+  }
+  .MainHeader li:hover:after { 
+    transform: scaleX(1); 
+}
+
+.signOutBtn{
+    height:40px;
+    font-size: 16px;
+    width:120px;
+    font-weight: bold;
+    color:#fff;
+    background-image: linear-gradient(to right, #8883f0,#1f18c0);
+    border:none;
+    border-radius: 10px;
+    margin-left: 15px;
+    transition: 0.3s;
+    box-shadow: 2px 2px 5px #000;
+    text-shadow: 2px 2px #000;
+}
+.signOutBtn:hover{
+    box-shadow:2px 2px 15px #1f18c0;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+
+
+/* Profile part */
+
+
+
+.mainProfileContainer{
+    height:100vh;
+    width:100vw;
+    background:transparent;
+    /* background-image: url("https://img.freepik.com/free-vector/winter-blue-pink-gradient-background-vector_53876-117276.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    position:fixed;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: rgba(136, 133, 133, 0.5);
+    z-index:100;
+    backdrop-filter: blur(7px);
+}
+@keyframes profile{
+        0%{
+            transform:scale(0%);
+            opacity: 0%;
+        }
+        100%{
+            transform: scale(100%);
+            opacity: 100%;
+
+        }
+}
+.card {
+    animation:profile 0.5s;
+    padding: 15px;
+    width: 350px;
+    background: #222;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+    user-select: none;
+    color:white;
+}
+
+.card .cover-photo {
+    position: relative;
+    background: url(https://i.imgur.com/jxyuizJ.jpeg);
+    background-size: cover;
+    height: 180px;
+    border-radius: 5px 5px 0 0;
+}
+
+.card .profile {
+    position: absolute;
+    width: 120px;
+    bottom: -60px;
+    left: 15px;
+    border-radius: 50%;
+    border: 2px solid #222;
+    background: #222;
+    padding: 5px;
+    transition: 0.5s;
+}
+.card .profile:hover {
+    width: 600px;
+    bottom: -400px;
+    left: -150px;
+    border-radius: 2%;
+    border: 2px solid #222;
+}
+
+.card .profile-name {
+    font-size: 20px;
+    margin: 25px 0 0 120px;
+    color: #fff;
+}
+
+.card.about {
+    margin-top: 30px;
+    line-height: 1.6;
+}
+
+.card .btn {
+    margin: 30px 15px;
+    background: #7ce3ff;
+    padding: 10px 25px;
+    border-radius: 3px;
+    border: 1px solid #7ce3ff;
+    font-weight: bold;
+    font-family: Montserrat;
+    cursor: pointer;
+    color: #222;
+    transition: 0.2s;
+}
+
+.card .btn:last-of-type {
+    background: transparent;
+    border-color: #7ce3ff;
+    color: #7ce3ff;
+}
+
+.card .btn:hover {
+    background: #7ce3ff;
+    color: #222;
+}
+
+.card .icons {
+    width: 180px;
+    margin: 0 auto 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.card .icons i {
+    cursor: pointer;
+    padding: 5px;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.card .icons i:hover {
+    color: #7ce3ff;
+}
+
+
+
+.mainVoiceListen{
+    height:100vh;
+    position: fixed;
+    z-index:99;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    animation: voice 0.2s linear ;
+}
+
+@keyframes voice {
+    from {transform: scale(0%);}
+    to {transform: scale(100%);}
+  }
+
+.mainVoiceListen h1 {
+    position:absolute;
+    z-index: 100;
+    color:rgb(162, 158, 158);
+    text-transform: capitalize;
+}
+.mic{
+    font-size: 30px;
+    transition: 0.5s;
+border-radius:100%;
+ width:50px;
+ height:50px;
+ cursor:pointer;
+ box-shadow:inset 2px 2px 5px #000;
+  margin:10px;
+}
+.mic:hover{
+     box-shadow:none;
+    font-size:35px;
+    transform:rotate(360deg)
+}
